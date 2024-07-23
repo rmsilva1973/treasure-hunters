@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxvw6u5iyamf8"]
+
+[ext_resource type="PackedScene" uid="uid://dwu4h0d7qm8fs" path="res://levels/base_level.tscn" id="1_6pso2"]
+[ext_resource type="PackedScene" uid="uid://cj7e3mxlbvuq7" path="res://character/character.tscn" id="2_6ytu1"]
+[ext_resource type="PackedScene" uid="uid://bt5eou0jissd7" path="res://collectables/sword/collectable_sword.tscn" id="3_ijm5x"]
+
+[node name="IslandT1" instance=ExtResource("1_6pso2")]
+
+[node name="Terrain" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(262153, 131072, 2, 262152, 65536, 2, 196617, 131072, 0, 196616, 65536, 0, 262151, 0, 2, 196615, 0, 0, 524290, 65536, 0, 589826, 65536, 2, 524291, 65536, 0, 589827, 65536, 2, 524292, 65536, 0, 589828, 65536, 2, 524293, 65536, 0, 589829, 65536, 2, 524294, 65536, 0, 589830, 65536, 2, 524295, 65536, 0, 589831, 65536, 2, 524296, 65536, 0, 589832, 65536, 2, 524297, 65536, 0, 589833, 65536, 2, 524298, 65536, 0, 589834, 65536, 2, 524299, 65536, 0, 589835, 65536, 2, 524300, 65536, 0, 589836, 458752, 0, 524301, 65536, 0, 589837, 65536, 1, 655373, 65536, 2, 524302, 65536, 0, 589838, 65536, 1, 655374, 65536, 2, 524303, 65536, 0, 589839, 65536, 1, 655375, 65536, 2, 524304, 65536, 0, 589840, 65536, 1, 655376, 65536, 2, 524305, 65536, 0, 589841, 65536, 1, 655377, 65536, 2, 524306, 131072, 0, 589842, 131072, 1, 655378, 131072, 2, 524289, 0, 0, 589825, 0, 2, 655372, 0, 2)
+
+[node name="Background" parent="." index="1"]
+visible = false
+
+[node name="Character" parent="." index="2" instance=ExtResource("2_6ytu1")]
+position = Vector2(249, 48)
+
+[node name="CollectableSword" parent="." index="3" instance=ExtResource("3_ijm5x")]
+position = Vector2(198, 234)
